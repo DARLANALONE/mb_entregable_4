@@ -456,12 +456,4 @@
 </body>
 </html>
 
-<!--
-Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Object Caching 119/312 objects using disk
-Page Caching using disk: enhanced (Requested method is POST)
-Database Caching 6/26 queries in 0.003 seconds using disk (Request-wide DONOTCACHEDB constant defined)
-
-Served from: promo-theme.com @ 2021-06-04 03:57:02 by W3 Total Cache
--->
