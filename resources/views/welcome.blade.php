@@ -1,133 +1,467 @@
+
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
 
-        <title>Laravel</title>
+    <title>My account &#8211; Medel Medical</title>
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link rel="alternate" type="application/rss+xml" title="Medel Medical &raquo; Feed" href="https://promo-theme.com/medel/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Medel Medical &raquo; Comments Feed" href="https://promo-theme.com/medel/comments/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/promo-theme.com\/medel\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.4"}};
+        !function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css'  href='https://promo-theme.com/medel/wp-includes/css/dist/block-library/style.min.css?ver=5.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='wc-block-vendors-style-css'  href='https://promo-theme.com/medel/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=4.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='wc-block-style-css'  href='https://promo-theme.com/medel/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=4.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css'  href='https://promo-theme.com/medel/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='select2-css'  href='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/css/select2.css?ver=5.0.0' type='text/css' media='all' />
+    <style id='woocommerce-inline-inline-css' type='text/css'>
+        .woocommerce form .form-row .required { visibility: visible; }
+    </style>
+    <link rel='stylesheet' id='medel-iconpicker-css'  href='https://promo-theme.com/medel/wp-content/themes/medel/css/iconfont.css?ver=5.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='medel-style-default-css'  href='https://promo-theme.com/medel/wp-content/themes/medel/style.css?ver=5.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='vc_font_awesome_5_shims-css'  href='https://promo-theme.com/medel/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/v4-shims.min.css?ver=6.6.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='vc_font_awesome_5-css'  href='https://promo-theme.com/medel/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/all.min.css?ver=6.6.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='medel-frontend-grid-css'  href='https://promo-theme.com/medel/wp-content/themes/medel/css/frontend-grid.css?ver=5.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='photoswipe-css'  href='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=5.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='photoswipe-default-skin-css'  href='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=5.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='medel-circle-animations-css'  href='https://promo-theme.com/medel/wp-content/themes/medel/css/circle_animations.css?ver=5.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='medel-style-css'  href='https://promo-theme.com/medel/wp-content/themes/medel/css/style.css?ver=5.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-general-css'  href='https://promo-theme.com/medel/wp-content/themes/medel/css/woocommerce.css?ver=5.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css'  href='https://promo-theme.com/medel/wp-content/themes/medel/css/woocommerce-layout.css?ver=5.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='medel-mobile-css'  href='https://promo-theme.com/medel/wp-content/themes/medel/css/mobile.css?ver=5.6.4' type='text/css' media='all' />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&#038;display=swap&#038;ver=1591954002" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&#038;display=swap&#038;ver=1591954002" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&#038;display=swap&#038;ver=1591954002" /></noscript><script type='text/javascript' src='https://code.jquery.com/jquery-1.12.4.min.js?ver=1.12.4' id='jquery-core-js'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js?ver=1.4.1' id='jquery-migrate-js'></script>
+    <script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70' id='jquery-blockui-js'></script>
+    <script type='text/javascript' id='wc-add-to-cart-js-extra'>
+        /* <![CDATA[ */
+        var wc_add_to_cart_params = {"ajax_url":"\/medel\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/medel\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/promo-theme.com\/medel\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=5.0.0' id='wc-add-to-cart-js'></script>
+    <script type='text/javascript' id='zxcvbn-async-js-extra'>
+        /* <![CDATA[ */
+        var _zxcvbnSettings = {"src":"https:\/\/promo-theme.com\/medel\/wp-includes\/js\/zxcvbn.min.js"};
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://promo-theme.com/medel/wp-includes/js/zxcvbn-async.min.js?ver=1.0' id='zxcvbn-async-js'></script>
+    <script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=6.6.0' id='vc_woocommerce-add-to-cart-js-js'></script>
+    <link rel="https://api.w.org/" href="https://promo-theme.com/medel/wp-json/" /><link rel="alternate" type="application/json" href="https://promo-theme.com/medel/wp-json/wp/v2/pages/8" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://promo-theme.com/medel/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://promo-theme.com/medel/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.6.4" />
+    <meta name="generator" content="WooCommerce 5.0.0" />
+    <link rel="canonical" href="https://promo-theme.com/medel/my-account/" />
+    <link rel='shortlink' href='https://promo-theme.com/medel/?p=8' />
+    <link rel="alternate" type="application/json+oembed" href="https://promo-theme.com/medel/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpromo-theme.com%2Fmedel%2Fmy-account%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://promo-theme.com/medel/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpromo-theme.com%2Fmedel%2Fmy-account%2F&#038;format=xml" />
+    <meta name="framework" content="Redux 4.1.24" />	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+    <meta name='robots' content='noindex,follow' />
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+    <link rel="icon" href="https://promo-theme.com/medel/wp-content/uploads/2017/12/cropped-favicon-2-100x100.png" sizes="32x32" />
+    <link rel="icon" href="https://promo-theme.com/medel/wp-content/uploads/2017/12/cropped-favicon-2-300x300.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://promo-theme.com/medel/wp-content/uploads/2017/12/cropped-favicon-2-300x300.png" />
+    <meta name="msapplication-TileImage" content="https://promo-theme.com/medel/wp-content/uploads/2017/12/cropped-favicon-2-300x300.png" />
+    <style id="medel_theme-dynamic-css" title="dynamic-css" class="redux-options-output">.site-header .logo img, .side-header .logo img, .site-header .logo a, .side-header .logo a{width:114px;}.site-header .header-top{background-color:#51c2cd;}.site-header.light{background-color:#ffffff;}.site-header.light{color:#222222;}.site-header.dark{color:#ffffff;}.color-scheme2 .site-header .header-top{background-color:#5180cd;}.color-scheme2 .site-header.light{background-color:#ffffff;}.color-scheme2 .site-header.dark{background-color:#3566b6;}.color-scheme2 .site-header.light{color:#222222;}.color-scheme2 .site-header.dark{color:#ffffff;}body{font-family:Montserrat;font-weight:300;font-style:normal;color:#222222;font-size:14px;font-display:swap;}h1, .h1{font-family:Montserrat;font-weight:300;font-style:normal;font-size:48px;font-display:swap;}h2, .h2{font-family:Montserrat;font-weight:300;font-style:normal;font-size:36px;font-display:swap;}h3, .h3{font-family:Montserrat;font-weight:300;font-style:normal;font-size:30px;font-display:swap;}h4, .h4{font-family:Montserrat;font-weight:300;font-style:normal;font-size:24px;font-display:swap;}h5, .h5{font-family:Montserrat;font-weight:300;font-style:normal;font-size:18px;font-display:swap;}h6, .h6{font-family:Montserrat;font-weight:300;font-style:normal;font-size:16px;font-display:swap;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	</head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
-        </style>
-
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                        @endif
-                    @endauth
+<body class="page-template-default page page-id-8 theme-medel woocommerce-account woocommerce-page woocommerce-no-js header_type_visible_menu color-scheme1 light wpb-js-composer js-comp-ver-6.6.0 vc_responsive">
+<div id="all" class="site">
+    <div class="preloader-area">
+        <div class="pulse"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100"><polyline fill="none" stroke-width="3px" stroke="#000" points="2.4,58.7 70.8,58.7 76.1,46.2 81.1,58.7 89.9,58.7 93.8,66.5 102.8,22.7 110.6,78.7 115.3,58.7 126.4,58.7 134.4,54.7 142.4,58.7 197.8,58.7 "/></svg></div>
+    </div>
+    <header class="site-header  light header-space-on main-row">
+        <div class="header-top">
+            <div class="container">
+                <div class="social-buttons">
+                    <a href="#" target="_self"><i class="fa fa-facebook"></i> <span>Facebook</span></a><a href="#" target="_self"><i class="fa fa-instagram"></i> <span>Instagram</span></a><a href="#" target="_self"><i class="fa fa-twitter"></i> <span>Twitter</span></a>								</div>
+                <div class="fr">
+                    <div class="working-time"><i class="fa fa-clock-o"></i><span>Mon - fri 8:00 am to 9:00 pm</span></div>
+                    <div class="phone-number"><i class="fa fa-phone"></i><span>1-800-555-0120</span></div>
+                    <div class="search-button"><i class="fa fa-search"></i></div>
                 </div>
-            @endif
-
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo"><a href="https://promo-theme.com/medel/"><img class="light" src="http://promo-theme.com/medel/wp-content/uploads/2017/11/logo-light.png" alt="Medel Medical"><img class="dark" src="http://promo-theme.com/medel/wp-content/uploads/2017/11/logo-dark.png" alt="Medel Medical"><img class="dark-scheme2" src="http://promo-theme.com/medel/wp-content/uploads/2017/11/logo2.png" alt="Medel Medical"></a></div>
+            <div class="fr">
+                <nav class="navigation visible_menu"><ul id="menu-navigation" class="menu"><li id="menu-item-373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-373"><a href="http://promo-theme.com/medel/"><span>Home</span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="https://promo-theme.com/medel/dental/"><span>Dental</span></a></li>
+                                <li id="menu-item-378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-378"><a href="https://promo-theme.com/medel/"><span>Doctor personal</span></a></li>
+                                <li id="menu-item-377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377"><a href="https://promo-theme.com/medel/healthy-food/"><span>Healthy Food</span></a></li>
+                                <li id="menu-item-376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://promo-theme.com/medel/private-clinic/"><span>Private Clinic</span></a></li>
+                                <li id="menu-item-375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://promo-theme.com/medel/surgery/"><span>Surgery</span></a></li>
+                                <li id="menu-item-374" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374"><a href="https://promo-theme.com/medel/yoga/"><span>Yoga</span></a></li>
+                                <li id="menu-item-552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a href="https://promo-theme.com/medel/home-shop/"><span>Shop</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-426"><a href="#"><span>Blog</span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-427"><a href="https://promo-theme.com/medel/blog/grid/"><span>Grid</span></a></li>
+                                <li id="menu-item-428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-428"><a href="https://promo-theme.com/medel/blog/horizontal/"><span>Horizontal</span></a></li>
+                                <li id="menu-item-429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-429"><a href="https://promo-theme.com/medel/blog/masonry/"><span>Masonry</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-430" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-430"><a href="#"><span>Gallery</span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-431" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-431"><a href="#"><span>Grid</span></a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-433"><a href="https://promo-theme.com/medel/gallery/grid/col-2/"><span>Col 2</span></a></li>
+                                        <li id="menu-item-434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-434"><a href="https://promo-theme.com/medel/gallery/grid/col-3/"><span>Col 3</span></a></li>
+                                        <li id="menu-item-435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-435"><a href="https://promo-theme.com/medel/gallery/grid/col-4/"><span>Col 4</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-432" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-432"><a href="#"><span>Masonry</span></a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-436"><a href="https://promo-theme.com/medel/gallery/masonry/col-2/"><span>Col 2</span></a></li>
+                                        <li id="menu-item-437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-437"><a href="https://promo-theme.com/medel/gallery/masonry/col-3/"><span>Col 3</span></a></li>
+                                        <li id="menu-item-438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-438"><a href="https://promo-theme.com/medel/gallery/masonry/col-4/"><span>Col 4</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-468"><a href="https://promo-theme.com/medel/gallery/project-items/"><span>Project items</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-439" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-439"><a href="#"><span>Pages</span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-440" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-440"><a href="http://promo-theme.com/medel/404.php"><span>404 Page</span></a></li>
+                                <li id="menu-item-441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-441"><a href="https://promo-theme.com/medel/about-us/"><span>About Us</span></a></li>
+                                <li id="menu-item-471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-471"><a href="https://promo-theme.com/medel/coming-soon/"><span>Coming Soon</span></a></li>
+                                <li id="menu-item-442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="https://promo-theme.com/medel/our-doctors/"><span>Our Doctors</span></a></li>
+                                <li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="https://promo-theme.com/medel/services/"><span>Services</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-446"><a href="https://promo-theme.com/medel/shop/"><span>Shop</span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-443"><a href="https://promo-theme.com/medel/cart/"><span>Cart</span></a></li>
+                                <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="https://promo-theme.com/medel/checkout/"><span>Checkout</span></a></li>
+                                <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-445"><a href="https://promo-theme.com/medel/my-account/" aria-current="page"><span>My account</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-484"><a href="https://promo-theme.com/medel/contacts/"><span>Contacts</span></a></li>
+                    </ul></nav>
+                <div class="butter-button nav-button visible_menu">
+                    <div></div>
                 </div>
+                <div class="header-minicart woocommerce header-minicart-medel">
+                    <div class="hm-cunt"><i class="material-design-shopping-cart"></i><span>0</span></div>
+                    <div class="minicart-wrap">
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="cart_list product_list_widget ">
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
+                            <li class="empty">No products in the cart.</li>
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
+                        </ul><!-- end product list -->
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
-
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
-
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </header>
+    <div class="header-space"></div>
+    <div class="search-popup main-row">
+        <div class="close free-basic-ui-elements-cancel"></div>
+        <div class="centered-container"><form role="search" method="get" class="searchform" action="https://promo-theme.com/medel/" >
+                <button type="submit" class="searchsubmit" value=""><i class="fa fa-search"></i></button>
+                <div><input type="text" value="" placeholder="Type and hit enter" name="s" class="input" /></div>
+            </form></div>
+    </div>
+    <nav class="full-screen-nav main-row">
+        <div class="close free-basic-ui-elements-cancel"></div>
+        <div class="fsn-container">
+            <ul id="menu-navigation-1" class="cell"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-373"><a href="http://promo-theme.com/medel/">Home</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="https://promo-theme.com/medel/dental/">Dental</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-378"><a href="https://promo-theme.com/medel/">Doctor personal</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377"><a href="https://promo-theme.com/medel/healthy-food/">Healthy Food</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://promo-theme.com/medel/private-clinic/">Private Clinic</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://promo-theme.com/medel/surgery/">Surgery</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374"><a href="https://promo-theme.com/medel/yoga/">Yoga</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a href="https://promo-theme.com/medel/home-shop/">Shop</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-426"><a href="#">Blog</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-427"><a href="https://promo-theme.com/medel/blog/grid/">Grid</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-428"><a href="https://promo-theme.com/medel/blog/horizontal/">Horizontal</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-429"><a href="https://promo-theme.com/medel/blog/masonry/">Masonry</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-430"><a href="#">Gallery</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-431"><a href="#">Grid</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-433"><a href="https://promo-theme.com/medel/gallery/grid/col-2/">Col 2</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-434"><a href="https://promo-theme.com/medel/gallery/grid/col-3/">Col 3</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-435"><a href="https://promo-theme.com/medel/gallery/grid/col-4/">Col 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-432"><a href="#">Masonry</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-436"><a href="https://promo-theme.com/medel/gallery/masonry/col-2/">Col 2</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-437"><a href="https://promo-theme.com/medel/gallery/masonry/col-3/">Col 3</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-438"><a href="https://promo-theme.com/medel/gallery/masonry/col-4/">Col 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-468"><a href="https://promo-theme.com/medel/gallery/project-items/">Project items</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-439"><a href="#">Pages</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-440"><a href="http://promo-theme.com/medel/404.php">404 Page</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-441"><a href="https://promo-theme.com/medel/about-us/">About Us</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-471"><a href="https://promo-theme.com/medel/coming-soon/">Coming Soon</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="https://promo-theme.com/medel/our-doctors/">Our Doctors</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="https://promo-theme.com/medel/services/">Services</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-446"><a href="https://promo-theme.com/medel/shop/">Shop</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-443"><a href="https://promo-theme.com/medel/cart/">Cart</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="https://promo-theme.com/medel/checkout/">Checkout</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-445"><a href="https://promo-theme.com/medel/my-account/" aria-current="page">My account</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-484"><a href="https://promo-theme.com/medel/contacts/">Contacts</a></li>
+            </ul>					</div>
+    </nav>
+
+    <main class="main-row">
+        <div class="container">
+
+            <article id="post-8" class="post-8 page type-page status-publish hentry">
+
+                <div class="site-content">
+                    <div class="heading-decor type-h2"><h1 class="h2">My account</h1></div>		<div class="clearfix"><div class="woocommerce"><div class="woocommerce-notices-wrapper"><ul class="woocommerce-error">
+                                    <li>Unknown username. Check again or try your email address.</li>
+                                </ul>
+                            </div>
+
+                            <h2>Login</h2>
+
+                            <form class="woocommerce-form woocommerce-form-login login" method="post">
+
+
+                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                    <label for="username">Username or email address&nbsp;<span class="required">*</span></label>
+                                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="francisco borda" />			</p>
+                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                    <label for="password">Password&nbsp;<span class="required">*</span></label>
+                                    <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+                                </p>
+
+
+                                <p class="form-row">
+                                    <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+                                        <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Remember me</span>
+                                    </label>
+                                    <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="e40bed2f6b" /><input type="hidden" name="_wp_http_referer" value="/medel/my-account/" />				<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Log in</button>
+                                </p>
+                                <p class="woocommerce-LostPassword lost_password">
+                                    <a href="https://promo-theme.com/medel/my-account/lost-password/">Lost your password?</a>
+                                </p>
+
+
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div><!-- .entry-content -->
+            </article><!-- #post-## -->
+
+        </div>
+    </main>
+
+
+    <footer class="site-footer dark main-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div class="logo"><a href="https://promo-theme.com/medel/"><img class="light" src="http://promo-theme.com/medel/wp-content/uploads/2017/11/logo-light.png" alt="Medel Medical"><img class="dark" src="http://promo-theme.com/medel/wp-content/uploads/2017/11/logo-dark.png" alt="Medel Medical"><img class="dark-scheme2" src="http://promo-theme.com/medel/wp-content/uploads/2017/11/logo2.png" alt="Medel Medical"></a></div>
+                    <div class="copyright">
+                        Medel is a premium WordPress theme made especially for individual dentists, dental clinics and other healthcare professionals and medical businesses.									</div>
+                    <div class="social-buttons">
+                        <a href="#" target="_self"><i class="fa fa-facebook"></i> <span>Facebook</span></a><a href="#" target="_self"><i class="fa fa-instagram"></i> <span>Instagram</span></a><a href="#" target="_self"><i class="fa fa-twitter"></i> <span>Twitter</span></a>									</div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h6 class="widget-title">Latest news</h6>		<div class="blog-post-widget widget">
+                        <div class="item">
+                            <a href="https://promo-theme.com/medel/blog/speed-king/" class="image" style="background-image: url(https://promo-theme.com/medel/wp-content/uploads/2017/11/photo11-150x150.jpg)"></a>
+                            <div class="text">
+                                <div class="cell">
+                                    <a href="https://promo-theme.com/medel/blog/speed-king/" class="name">Speed King</a>
+                                    <div class="blog-detail"><span>November 23, 2017</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="https://promo-theme.com/medel/blog/nothing-else-matters/" class="image" style="background-image: url(https://promo-theme.com/medel/wp-content/uploads/2017/11/photo10-150x150.jpg)"></a>
+                            <div class="text">
+                                <div class="cell">
+                                    <a href="https://promo-theme.com/medel/blog/nothing-else-matters/" class="name">Nothing Else Matters</a>
+                                    <div class="blog-detail"><span>November 23, 2017</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div id="nav_menu-2" class="widget widget_nav_menu"><h6 class="widget-title">Pages</h6><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524"><a href="https://promo-theme.com/medel/about-us/">About Us</a></li>
+                                <li id="menu-item-525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-525"><a href="https://promo-theme.com/medel/blog/grid/">Blog</a></li>
+                                <li id="menu-item-527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-527"><a href="https://promo-theme.com/medel/services/">Services</a></li>
+                                <li id="menu-item-528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-528"><a href="https://promo-theme.com/medel/shop/">Shop</a></li>
+                                <li id="menu-item-526" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-526"><a href="https://promo-theme.com/medel/contacts/">Contacts</a></li>
+                            </ul></div></div>							</div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div id="custom_html-3" class="widget_text widget widget_custom_html"><h6 class="widget-title">contact us</h6><div class="textwidget custom-html-widget"><div class="footer-c-row">
+                                <i class="fa fa-phone"></i>
+                                <div class="text phone">
+                                    <div class="cell">
+                                        1-800-555-0120
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-c-row">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="text address">
+                                    <div class="cell">
+                                        4321 Your Address, Country
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-c-row">
+                                <i class="fa fa-clock-o"></i>
+                                <div class="text shedule">
+                                    <div class="o-row">Mon - Fri <span>8:00 - 21:00</span><br></div>
+                                    <div class="o-row">Saturday <span>8:00 - 21:00</span><br></div>
+                                    <div class="o-row">Sunday <span>9:00 - 17:00</span></div>
+                                </div>
+                            </div></div></div>							</div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script type="text/javascript">
+    (function () {
+        var c = document.body.className;
+        c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+        document.body.className = c;
+    })()
+</script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+    ( 'fetch' in window ) || document.write( '<script src="https://promo-theme.com/medel/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://promo-theme.com/medel/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://promo-theme.com/medel/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://promo-theme.com/medel/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://promo-theme.com/medel/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://promo-theme.com/medel/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-includes/js/dist/i18n.min.js?ver=ac389435e7fd4ded01cf603f3aaba6a6' id='wp-i18n-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+    window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-includes/js/dist/url.min.js?ver=98645f0502e5ed8dadffd161e39072d2' id='wp-url-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-includes/js/dist/hooks.min.js?ver=84b89ab09cbfb4469f02183611cc0939' id='wp-hooks-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-translations'>
+    ( function( domain, translations ) {
+        var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+        localeData[""].domain = domain;
+        wp.i18n.setLocaleData( localeData, domain );
+    } )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-includes/js/dist/api-fetch.min.js?ver=4dec825c071b87c57f687eb90f7c23c3' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+    wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://promo-theme.com/medel/wp-json/" ) );
+    wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "142eb38252" );
+    wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+    wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+    wp.apiFetch.nonceEndpoint = "https://promo-theme.com/medel/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+    /* <![CDATA[ */
+    var wpcf7 = {"cached":"1"};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.6' id='selectWoo-js'></script>
+<script type='text/javascript' id='password-strength-meter-js-extra'>
+    /* <![CDATA[ */
+    var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+    /* ]]> */
+</script>
+<script type='text/javascript' id='password-strength-meter-js-translations'>
+    ( function( domain, translations ) {
+        var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+        localeData[""].domain = domain;
+        wp.i18n.setLocaleData( localeData, domain );
+    } )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-admin/js/password-strength-meter.min.js?ver=5.6.4' id='password-strength-meter-js'></script>
+<script type='text/javascript' id='wc-password-strength-meter-js-extra'>
+    /* <![CDATA[ */
+    var wc_password_strength_meter_params = {"min_password_strength":"3","stop_checkout":"","i18n_password_error":"Please enter a stronger password.","i18n_password_hint":"Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ & )."};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.min.js?ver=5.0.0' id='wc-password-strength-meter-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+    /* <![CDATA[ */
+    var woocommerce_params = {"ajax_url":"\/medel\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/medel\/?wc-ajax=%%endpoint%%"};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.0.0' id='woocommerce-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+    /* <![CDATA[ */
+    var wc_cart_fragments_params = {"ajax_url":"\/medel\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/medel\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_d2b2da9968f2d40765a6ba0a41da2d17","fragment_name":"wc_fragments_d2b2da9968f2d40765a6ba0a41da2d17","request_timeout":"5000"};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.0.0' id='wc-cart-fragments-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/themes/medel/js/js_composer_front.min.js?ver=5.6.4' id='js_composer_front-js'></script>
+<script type='text/javascript' id='pt-scripts-js-extra'>
+    /* <![CDATA[ */
+    var yprm_ajax = {"url":"https:\/\/promo-theme.com\/medel\/wp-admin\/admin-ajax.php"};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/pt-medel-shortcodes/include/js/scripts.js?ver=1.0.0' id='pt-scripts-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/themes/medel/js/skip-link-focus-fix.js?ver=5.6.4' id='medel-skip-link-focus-fix-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/themes/medel/js/load-posts.js?ver=5.6.4' id='medel-load-posts-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=6.6.0' id='isotope-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1' id='photoswipe-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1' id='photoswipe-ui-default-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-content/themes/medel/js/script.js?ver=5.6.4' id='medel-script-js'></script>
+<script type='text/javascript' src='https://promo-theme.com/medel/wp-includes/js/wp-embed.min.js?ver=5.6.4' id='wp-embed-js'></script>
+
+</body>
 </html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 119/312 objects using disk
+Page Caching using disk: enhanced (Requested method is POST)
+Database Caching 6/26 queries in 0.003 seconds using disk (Request-wide DONOTCACHEDB constant defined)
+
+Served from: promo-theme.com @ 2021-06-04 03:57:02 by W3 Total Cache
+-->
