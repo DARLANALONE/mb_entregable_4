@@ -94,7 +94,9 @@
             </div>
         </div>
         <div class="container">
-            <div class="logo"><a href="https://promo-theme.com/medel/"><img class="light" src="http://promo-theme.com/medel/wp-content/uploads/2017/11/logo-light.png" alt="Medel Medical"><img class="dark" src="http://promo-theme.com/medel/wp-content/uploads/2017/11/logo-dark.png" alt="Medel Medical"><img class="dark-scheme2" src="http://promo-theme.com/medel/wp-content/uploads/2017/11/logo2.png" alt="Medel Medical"></a></div>
+            <div class="logo">
+                <h2>medical bases</h2>
+                <a href="https://promo-theme.com/medel/">
             <div class="fr">
                 <nav class="navigation visible_menu"><ul id="menu-navigation" class="menu"><li id="menu-item-373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-373"><a href="http://promo-theme.com/medel/"><span>Home</span></a>
                             <ul class="sub-menu">
@@ -104,7 +106,7 @@
                                 <li id="menu-item-376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://promo-theme.com/medel/private-clinic/"><span>Private Clinic</span></a></li>
                                 <li id="menu-item-375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://promo-theme.com/medel/surgery/"><span>Surgery</span></a></li>
                                 <li id="menu-item-374" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374"><a href="https://promo-theme.com/medel/yoga/"><span>Yoga</span></a></li>
-                                <li id="menu-item-552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a href="https://promo-theme.com/medel/home-shop/"><span>Shop</span></a></li>
+                                <li id="menu-item-552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a href="https://promo-theme.com/medel/home-shop/"><span>login</span></a></li>
                             </ul>
                         </li>
                         <li id="menu-item-426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-426"><a href="#"><span>Blog</span></a>
@@ -142,7 +144,7 @@
                                 <li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="https://promo-theme.com/medel/services/"><span>Services</span></a></li>
                             </ul>
                         </li>
-                        <li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-446"><a href="https://promo-theme.com/medel/shop/"><span>Shop</span></a>
+                        <li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-446"><a href="http://brandio.io/envato/iofrm/html/register1.html#"><span>login</span></a>
                             <ul class="sub-menu">
                                 <li id="menu-item-443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-443"><a href="https://promo-theme.com/medel/cart/"><span>Cart</span></a></li>
                                 <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="https://promo-theme.com/medel/checkout/"><span>Checkout</span></a></li>
