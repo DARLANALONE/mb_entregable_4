@@ -103,7 +103,7 @@
                                 <li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-117 current_page_item menu-item-459"><a href="https://promo-theme.com/medel/dental/" aria-current="page"><span>Dental</span></a></li>
                                 <li id="menu-item-378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-378"><a href="https://promo-theme.com/medel/"><span>personal medico</span></a></li>
                                 <li id="menu-item-376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://promo-theme.com/medel/private-clinic/"><span>Private Clinic</span></a></li>
-                                <li id="menu-item-375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://promo-theme.com/medel/surgery/"><span>Surgery</span></a></li>
+                                
                             </ul>
                         </li>
                         <li id="menu-item-426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-426"><a href="#"><span>Blog</span></a>
