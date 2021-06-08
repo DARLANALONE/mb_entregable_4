@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
 
-    <title>Dental &#8211; Medel Medical</title>
+    <title>Dental &#8211; Medical Bases</title>
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
@@ -86,24 +86,35 @@
             <div class="container">
                 <div class="social-buttons">
                     <a href="#" target="_self"><i class="fa fa-facebook"></i> <span>Facebook</span></a><a href="#" target="_self"><i class="fa fa-instagram"></i> <span>Instagram</span></a><a href="#" target="_self"><i class="fa fa-twitter"></i> <span>Twitter</span></a>								</div>
-                <div class="fr">
-                    <div class="working-time"><i class="fa fa-clock-o"></i><span>Mon - fri 8:00 am to 9:00 pm</span></div>
-                    <div class="phone-number"><i class="fa fa-phone"></i><span>1-800-555-0120</span></div>
-                    <div class="search-button"><i class="fa fa-search"></i></div>
+                <body class="antialiased">
+                <div
+                    class="relative flex items-top justify-righ min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+                    @if (Route::has('login'))
+                        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                            @auth
+                                <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
+                            @else
+                                <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
+
+                                @if (Route::has('register'))
+                                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                                @endif
+                            @endauth
+                        </div>
+                    @endif
                 </div>
+                </body>
             </div>
         </div>
         <div class="container">
             <div class="logo">
-                <h2>medical bases</h2>
-                <a href="https://promo-theme.com/medel/">
             <div class="fr">
-                <nav class="navigation visible_menu"><ul id="menu-navigation" class="menu"><li id="menu-item-373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-373"><a href="http://promo-theme.com/medel/"><span>Home</span></a>
+                <nav class="navigation visible_menu"><ul id="menu-navigation" class="menu"><li id="menu-item-373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-373"><a href="http://promo-theme.com/medel/"><span>Dashboard</span></a>
                             <ul class="sub-menu">
                                 <li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-117 current_page_item menu-item-459"><a href="https://promo-theme.com/medel/dental/" aria-current="page"><span>Dental</span></a></li>
                                 <li id="menu-item-378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-378"><a href="https://promo-theme.com/medel/"><span>personal medico</span></a></li>
                                 <li id="menu-item-376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://promo-theme.com/medel/private-clinic/"><span>Private Clinic</span></a></li>
-                                
+
                             </ul>
                         </li>
                         <li id="menu-item-426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-426"><a href="#"><span>Blog</span></a>
@@ -141,11 +152,10 @@
                                 <li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="https://promo-theme.com/medel/services/"><span>Services</span></a></li>
                             </ul>
                         </li>
-                        <li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-446"><a href="http://brandio.io/envato/iofrm/html/register1.html#"><span>login</span></a>
+                        <li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-446"><a href=""><span>INGRESO</span></a>
                             <ul class="sub-menu">
-                                <li id="menu-item-443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-443"><a href="https://promo-theme.com/medel/cart/"><span>Cart</span></a></li>
-                                <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="https://promo-theme.com/medel/checkout/"><span>Checkout</span></a></li>
-                                <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="https://promo-theme.com/medel/my-account/"><span>My account</span></a></li>
+                                <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="http://127.0.0.1:8000/login"><span>ingresar</span></a></li>
+                                <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="http://127.0.0.1:8000/register"><span>registro</span></a></li>
                             </ul>
                         </li>
                         <li id="menu-item-484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-484"><a href="https://promo-theme.com/medel/contacts/"><span>Contacts</span></a></li>
@@ -153,22 +163,7 @@
                 <div class="butter-button nav-button visible_menu">
                     <div></div>
                 </div>
-                <div class="header-minicart woocommerce header-minicart-medel">
-                    <div class="hm-cunt"><i class="material-design-shopping-cart"></i><span>0</span></div>
-                    <div class="minicart-wrap">
 
-
-                        <ul class="cart_list product_list_widget ">
-
-
-                            <li class="empty">No products in the cart.</li>
-
-
-                        </ul><!-- end product list -->
-
-
-                    </div>
-                </div>
             </div>
         </div>
     </header>
@@ -183,7 +178,7 @@
     <nav class="full-screen-nav main-row">
         <div class="close free-basic-ui-elements-cancel"></div>
         <div class="fsn-container">
-            <ul id="menu-navigation-1" class="cell"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-373"><a href="http://promo-theme.com/medel/">Home</a>
+            <ul id="menu-navigation-1" class="cell"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-373"><a href="http://promo-theme.com/medel/">Dashboard</a>
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-117 current_page_item menu-item-459"><a href="https://promo-theme.com/medel/dental/" aria-current="page">Dental</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-378"><a href="https://promo-theme.com/medel/">Doctor personal</a></li>
@@ -191,7 +186,7 @@
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://promo-theme.com/medel/private-clinic/">Private Clinic</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://promo-theme.com/medel/surgery/">Surgery</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374"><a href="https://promo-theme.com/medel/yoga/">Yoga</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a href="https://promo-theme.com/medel/home-shop/">Shop</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a href="https://promo-theme.com/medel/dashboard-shop/">Shop</a></li>
                     </ul>
                 </li>
                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-426"><a href="#">Blog</a>
@@ -243,8 +238,8 @@
     <main class="main-row">
         <div class="container">
 
-            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding" style="background-position: 50% !important;  "><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="banner-area banner-5a0ef62686a73"><div class="banner " style=""><div class="item banner-item-60bad9885f44d black content-align-left middle" style="background-image: url(https://promo-theme.com/medel/wp-content/uploads/2017/11/bg5.jpg);"><div class="container"><div class="cell"><h1 class="h">We Build<br />
-                                                    Your <span>Smile</span></h1><div class="text">We are private dental clinic</div><div class="link-area"><a href="#" class="button-style1 link1" title="" target="_self">learn more</a><a href="#" class="button-style1 link2" title="" target="_self">make an appointment</a></div></div></div></div></div><div class="scroll-next-screen"></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp" style="background-position: 50% !important;  "><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="icon-box-items row style1 prev-layer"><div class="icon-box-item-wrap col-xs-12 col-sm-6 col-md-3"><div class="icon-box-item icon-box-60bad9885f9d8"><div class="top"><i class="health-care-icon-set-first-aid-kit"></i><div><div class="cell">Consultation</div></div></div><div class="wrap"><div class="text">Whichever specific health issue you’re facing, we’llgive you a free consultation on it!</div><a href="#" target="_self" class="link">Free Consultation</a></div></div></div><div class="icon-box-item-wrap col-xs-12 col-sm-6 col-md-3"><div class="icon-box-item icon-box-60bad9885fa58"><div class="top"><i class="free-basic-ui-elements-placeholder"></i><div><div class="cell">Our Location</div></div></div><div class="wrap"><div class="text">3201 mg Road, Glassgow, Seattle, WA 254122-1090</div><a href="#" target="_self" class="link">See on Map</a></div></div></div><div class="icon-box-item-wrap col-xs-12 col-sm-6 col-md-3"><div class="icon-box-item icon-box-60bad9885fab1"><div class="top"><i class="fa fa-phone"></i><div><div class="cell">Appointments</div></div></div><div class="wrap"><div class="text">Call us to register apointment<br />
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding" style="background-position: 50% !important;  "><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="banner-area banner-5a0ef62686a73"><div class="banner " style=""><div class="item banner-item-60bad9885f44d black content-align-left middle" style="background-image: url(https://promo-theme.com/medel/wp-content/uploads/2017/11/bg5.jpg);"><div class="container"><div class="cell"><h1 class="h">MEDICAL BASES<br />
+                                                    Sistema de Informacion<span>Medico</span></h1><div class="text">CENTRO ODONTOLOGICO RADIORAL</div><div class="link-area"><a href="#" class="button-style1 link1" title="" target="_self">learn more</a><a href="#" class="button-style1 link2" title="" target="_self">make an appointment</a></div></div></div></div></div><div class="scroll-next-screen"></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp" style="background-position: 50% !important;  "><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="icon-box-items row style1 prev-layer"><div class="icon-box-item-wrap col-xs-12 col-sm-6 col-md-3"><div class="icon-box-item icon-box-60bad9885f9d8"><div class="top"><i class="health-care-icon-set-first-aid-kit"></i><div><div class="cell">Consultation</div></div></div><div class="wrap"><div class="text">Whichever specific health issue you’re facing, we’llgive you a free consultation on it!</div><a href="#" target="_self" class="link">Free Consultation</a></div></div></div><div class="icon-box-item-wrap col-xs-12 col-sm-6 col-md-3"><div class="icon-box-item icon-box-60bad9885fa58"><div class="top"><i class="free-basic-ui-elements-placeholder"></i><div><div class="cell">Our Location</div></div></div><div class="wrap"><div class="text">3201 mg Road, Glassgow, Seattle, WA 254122-1090</div><a href="#" target="_self" class="link">See on Map</a></div></div></div><div class="icon-box-item-wrap col-xs-12 col-sm-6 col-md-3"><div class="icon-box-item icon-box-60bad9885fab1"><div class="top"><i class="fa fa-phone"></i><div><div class="cell">Appointments</div></div></div><div class="wrap"><div class="text">Call us to register apointment<br />
                                                 or sign up online. We have worls-class, flexible support.</div><a href="#" target="_self" class="link">1-800-555-0120</a></div></div></div><div class="icon-box-item-wrap col-xs-12 col-sm-6 col-md-3"><div class="icon-box-item icon-box-60bad9885fb01"><div class="top"><i class="fa fa-clock-o"></i><div><div class="cell">Opening Hour</div></div></div><div class="wrap"><div class="time"><div class="o-row">Mon - Fri <span>8:00 - 21:00</span><br /></div><div class="o-row">Saturday <span>8:00 - 21:00</span><br /></div><div class="o-row">Sunday <span>9:00 - 17:00</span></div></div></div></div></div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1518792034660 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex" style="background-position: 50% !important;  "><div class="wpb_animate_when_almost_visible wpb_fadeInLeft fadeInLeft wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1518792103208"><div class="wpb_wrapper"><div class="heading-decor-s tal heading-decor-60bad98860057 type-h3"><h3 style="text-align: left" class="h vc_custom_heading" ><span>About Us</span></h3></div>
                             <div class="wpb_text_column wpb_content_element " >
                                 <div class="wpb_wrapper">
