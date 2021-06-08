@@ -156,6 +156,7 @@
                             <ul class="sub-menu">
                                 <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="https://medicalbases.herokuapp.com/login"><span>ingresar</span></a></li>
                                 <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="https://medicalbases.herokuapp.com/register"><span>registro</span></a></li>
+                                @csrf
                             </ul>
                         </li>
                         <li id="menu-item-484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-484"><a href="https://promo-theme.com/medel/contacts/"><span>Contacts</span></a></li>
