@@ -154,8 +154,8 @@
                         </li>
                         <li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-446"><a href=""><span>INGRESO</span></a>
                             <ul class="sub-menu">
-                                <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="http://127.0.0.1:8000/login"><span>ingresar</span></a></li>
-                                <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="http://127.0.0.1:8000/register"><span>registro</span></a></li>
+                                <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="https://medicalbases.herokuapp.com/login"><span>ingresar</span></a></li>
+                                <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="https://medicalbases.herokuapp.com/register"><span>registro</span></a></li>
                             </ul>
                         </li>
                         <li id="menu-item-484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-484"><a href="https://promo-theme.com/medel/contacts/"><span>Contacts</span></a></li>
