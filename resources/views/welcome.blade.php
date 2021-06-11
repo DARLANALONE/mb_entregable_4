@@ -7,6 +7,7 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
 
     <title>Dental &#8211; Medical Bases</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
@@ -86,24 +87,12 @@
             <div class="container">
                 <div class="social-buttons">
                     <a href="#" target="_self"><i class="fa fa-facebook"></i> <span>Facebook</span></a><a href="#" target="_self"><i class="fa fa-instagram"></i> <span>Instagram</span></a><a href="#" target="_self"><i class="fa fa-twitter"></i> <span>Twitter</span></a>								</div>
-                <body class="antialiased">
-                <div
-                    class="relative flex items-top justify-righ min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-                    @if (Route::has('login'))
-                        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                            @auth
-                                <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
-                            @else
-                                <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
-
-                                @if (Route::has('register'))
-                                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                                @endif
-                            @endauth
-                        </div>
-                    @endif
+                <div class="fr">
+                    <div class="btn-group me-5">
+                        <a href="http://127.0.0.1:8000/login" class="btn btn-primary">Acceder</a>
+                        <a href="http://127.0.0.1:8000/register" class="btn btn-primary">Registrarse</a>
+                    </div>
                 </div>
-                </body>
             </div>
         </div>
         <div class="container">
@@ -154,9 +143,9 @@
                         </li>
                         <li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-446"><a href=""><span>INGRESO</span></a>
                             <ul class="sub-menu">
-                                <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="https://medicalbases.herokuapp.com/login"><span>ingresar</span></a></li>
-                                <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="https://medicalbases.herokuapp.com/register"><span>registro</span></a></li>
-                                @csrf
+                                <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444"><a href="http://127.0.0.1:8000/login"><span>ingresar</span></a></li>
+                                <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="http://127.0.0.1:8000/register"><span>registro</span></a></li>
+
                             </ul>
                         </li>
                         <li id="menu-item-484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-484"><a href="https://promo-theme.com/medel/contacts/"><span>Contacts</span></a></li>
