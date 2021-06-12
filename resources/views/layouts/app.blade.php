@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 
 <!-- index22:59-->
@@ -9,12 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+{{--    en esta parte añado los estilos ya ubicados en sus carpetas--}}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href={{ asset("assets/css/bootstrap.min.css")}}>
-    <link rel="stylesheet" type="text/css" href={{ asset ("assets/css/font-awesome.min.css")}}>
-    <link rel="stylesheet" type="text/css" href={{ asset ("assets/css/style.css") }}>
+    <link rel="stylesheet" type="text/css" href={{ asset("css/bootstrap.min.css") }}>
+    <link rel="stylesheet" type="text/css" href={{ asset("css/style.css") }}>
+    <link rel="stylesheet" type="text/css" href={{ asset("css/font-awesome.min.css") }}>
+
+    <link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\mb_entregable_4\public\css\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\mb_entregable_4\public\css\style.css">
+    <link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\mb_entregable_4\public\css\font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/tagsinput.css">
     <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="./js/html5shiv.min.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
 </head>
