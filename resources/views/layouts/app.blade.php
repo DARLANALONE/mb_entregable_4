@@ -23,7 +23,6 @@
     <link rel="stylesheet" type="text/css" href="public/css/fullcalendar.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/select2.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/tagsinput.css">
-    <link rel="stylesheet" type="text/css" href="public/css/luis.css">
     <!--[if lt IE 9]>
     <script src="public/js/app.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
