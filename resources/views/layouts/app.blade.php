@@ -7,8 +7,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <link rel="shortcut icon" type="image/x-icon" href="public/img/favicon.ico">
-    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <link rel="icon" href="{!! asset('imagenes/nuevo isologo primera forma.png') !!}" type="image/x-icon">
+    <title>Medical Bases - sistema de control</title>
 {{--    en esta parte añado los estilos ya ubicados en sus carpetas--}}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href={{ asset("css/bootstrap.min.css") }}>
@@ -36,7 +36,7 @@
     <div class="header">
         <div class="header-left">
             <a href="index-2.html" class="logo">
-                <img src="public/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
+                <img src="{{ asset('imagenes/nuevo isologo primera forma.png') }}" width="35" height="35" alt=""> <span>MEDICAL BASES</span>
             </a>
         </div>
         <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -119,11 +119,12 @@
             </li>
             <li class="nav-item dropdown has-arrow">
                 <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+{{--                    -------ubicacion de la parte superior derecha del dashboard, donde aparece el administrador con sus funciones--}}
                         <span class="user-img">
-							<img class="rounded-circle" src="public/img/user.jpg" width="24" alt="Admin">
+							<img class="rounded-square" src="{{ asset('img/user.jpg') }}" width="24" alt="foto_admin">
 							<span class="status online"></span>
 						</span>
-                    <span>Admin</span>
+                    <span>Doc administrador</span>
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="profile.html">My Profile</a>
@@ -895,13 +896,13 @@
     </div>
 </div>
 <div class="sidebar-overlay" data-reff=""></div>
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.slimscroll.js"></script>
-<script src="assets/js/Chart.bundle.js"></script>
-<script src="assets/js/chart.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ asset('js/popper.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/jquery.slimscroll.js') }}"></script>
+<script src="{{ asset('js/Chart.bundle.js') }}"></script>
+<script src="{{ asset('js/Chart.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 
 </body>
 
