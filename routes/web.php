@@ -12,11 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/salida', [\App\Http\Controllers\pagesController::class, 'logout-other-browser-sessions-form']);
+Route::get('/doctor',[\App\Http\Controllers\pagesController::class,'doctor']);
