@@ -130,7 +130,7 @@
                     <a class="dropdown-item" href="profile.html">My Profile</a>
                     <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
                     <a class="dropdown-item" href="settings.html">Settings</a>
-                    <a class="dropdown-item" href="{{ asset('procfile/logout-other-browser-sessions-form') }}">salida</a>
+                    <a class="dropdown-item" href="{{ asset('auth/login.blade.php') }}">logout</a>
                 </div>
             </li>
         </ul>

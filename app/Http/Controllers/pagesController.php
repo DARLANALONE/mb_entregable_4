@@ -10,9 +10,9 @@ class pagesController extends Controller
     {
         return view('layouts.app');
     }
-    public function login()
+    public function logout()
     {
-        return view('procfile.logout-other-browser-sessions-form');
+        return view('login');
     }
     public function doctor()
     {

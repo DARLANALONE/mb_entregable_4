@@ -21,5 +21,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/salida', [\App\Http\Controllers\pagesController::class, 'logout-other-browser-sessions-form']);
 Route::get('/doctor',[\App\Http\Controllers\pagesController::class,'doctor']);
+Route::get('logout', 'auth\loginController@show')->name('logout');
