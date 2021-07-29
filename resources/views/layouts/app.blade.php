@@ -15,10 +15,7 @@
     <link rel="stylesheet" type="text/css" href={{ asset("css/style.css") }}>
     <link rel="stylesheet" type="text/css" href={{ asset("css/font-awesome.min.css") }}>
 
-    <link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\mb_entregable_4\public\css\bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\mb_entregable_4\public\css\style.css">
-    <link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\mb_entregable_4\public\css\font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/fullcalendar.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/select2.min.css">
@@ -26,8 +23,8 @@
     <!--[if lt IE 9]>
     <script src="public/js/app.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
-    <script src="public/js/html5shiv.min.js"></script>
-    <script src="public/js/respond.min.js"></script>
+    <script src={{asset("js/html5shiv.min.js")}}></script>
+    <script src={{asset("js/respond.min.js")}}></script>
     <![endif]-->
 </head>
 
@@ -130,7 +127,7 @@
                     <a class="dropdown-item" href="profile.html">My Profile</a>
                     <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
                     <a class="dropdown-item" href="settings.html">Settings</a>
-                    <a class="dropdown-item" href="{{ asset('auth/login.blade.php') }}">logout</a>
+                    <a class="dropdown-item" href="http://127.0.0.1:8000/logout">logout</a>
                 </div>
             </li>
         </ul>

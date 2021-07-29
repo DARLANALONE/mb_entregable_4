@@ -21,5 +21,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::get('/add-doctor',[\App\Http\Controllers\pagesController::class,'doctornew']);
 Route::get('/doctor',[\App\Http\Controllers\pagesController::class,'doctor']);
-Route::get('logout', 'auth\loginController@show')->name('logout');
+Route::get('/logout', [\App\Http\Controllers\pagesController::class,'logout']);

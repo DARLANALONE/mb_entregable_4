@@ -12,10 +12,14 @@ class pagesController extends Controller
     }
     public function logout()
     {
-        return view('login');
+        return view('auth.login');
     }
     public function doctor()
     {
         return view('layouts.doctor');
+    }
+    public function doctornew()
+    {
+        return view('layouts.add-doctor');
     }
 }

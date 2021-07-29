@@ -87,7 +87,7 @@
                     <a href="#" target="_self">x<i class="fa fa-facebook"></i> <span>Facebook</span></a><a href="#" target="_self"><i class="fa fa-instagram"></i> <span>Instagram</span></a><a href="#" target="_self"><i class="fa fa-twitter"></i> <span>Twitter</span></a>								</div>
                 <div class="fr">
                     <div class="btn-group me-5">
-                        <a href="http://127.0.0.1:8000/login" class="btn btn-outline-dark">Acceder</a>
+                        <a href="http://127.0.0.1:8000/logout" class="btn btn-outline-dark">Acceder</a>
                         <a href="http://127.0.0.1:8000/register" class="btn btn-outline-dark">Registrarse</a>
                     </div>
                 </div>

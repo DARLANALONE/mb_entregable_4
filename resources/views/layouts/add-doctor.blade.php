@@ -2,20 +2,20 @@
 <html lang="en">
 
 
-<!-- add-doctor24:06-->
+<!-- add-doctor-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" href="{!! asset('imagenes/nuevo isologo primera forma.png') !!}" type="image/x-icon">
+    <title>Medical Bases - sistema de control</title>
+    <link rel="stylesheet" type="text/css" href={{ asset("css/bootstrap.min.css") }}>
+    <link rel="stylesheet" type="text/css" href={{ asset("css/font-awesome.min.css") }}>
+    <link rel="stylesheet" type="text/css" href={{ asset("css/select2.min.css")}}>
+    <link rel="stylesheet" type="text/css" href={{ asset("css/bootstrap-datetimepicker.min.css")}}>
+    <link rel="stylesheet" type="text/css" href={{ asset("css/style.css")}}>
     <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.min.js"></script>
-    <script src="assets/js/respond.min.js"></script>
+    <script src={{ asset("js/html5shiv.min.js")}}></script>
+    <script src={{ asset("js/respond.min.js")}}></script>
     <![endif]-->
 </head>
 
@@ -24,7 +24,7 @@
     <div class="header">
         <div class="header-left">
             <a href="index-2.html" class="logo">
-                <img src="assets/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
+                <img src="{{ asset('imagenes/nuevo isologo primera forma.png') }}" width="35" height="35" alt=""> <span>MEDICAL BASES</span>
             </a>
         </div>
         <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -296,7 +296,7 @@
         <div class="content">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h4 class="page-title">Add Doctor</h4>
+                    <h4 class="page-title">nuevo doctor</h4>
                 </div>
             </div>
             <div class="row">
