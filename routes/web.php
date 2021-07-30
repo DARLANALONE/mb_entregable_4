@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\pagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +23,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/add-doctor',[\App\Http\Controllers\pagesController::class,'doctornew']);
-Route::get('/doctor',[\App\Http\Controllers\pagesController::class,'doctor']);
-Route::get('/logout', [\App\Http\Controllers\pagesController::class,'logout']);
+//Route::get('/add-doctor', 'DoctorController@add-doctor');
+//Route::get('/Doctor', 'DoctorController@index');
+//Route::resource('Doctor','DoctorController');
+//Route::get('/doctor',[\App\Http\Controllers\pagesController::class,'doctor']);
+Route::get('/logout', [pagesController::class,'logout']);
+Route::get('/index', [DoctorController::class,'index']);
+

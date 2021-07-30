@@ -41,7 +41,7 @@
                                 <a href="activities.html">
                                     <div class="media">
 											<span class="avatar">
-												<img alt="John Doe" src="public/img/user.jpg" class="img-fluid">
+												<img alt="John Doe" src="../../../public/img/user.jpg" class="img-fluid">
 											</span>
                                         <div class="media-body">
                                             <p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
@@ -366,7 +366,7 @@
                         </div>
                         <div class="dropdown profile-action">
                             <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-menu">
                                 <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
                             </div>
@@ -764,14 +764,14 @@
     </div>
 </div>
 <div class="sidebar-overlay" data-reff=""></div>
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.slimscroll.js"></script>
-<script src="assets/js/select2.min.js"></script>
-<script src="assets/js/moment.min.js"></script>
-<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
-<script src="assets/js/app.js"></script>
+<script src={{asset("js/jquery-3.2.1.min.js")}}></script>
+<script src={{ asset("js/popper.min.js") }}></script>
+<script src={{ asset("js/bootstrap.min.js")}}></script>
+<script src={{ asset("js/jquery.slimscroll.js") }}></script>
+<script src={{ asset("js/select2.min.js") }}></script>
+<script src={{ asset("js/moment.min.js") }}></script>
+<script src={{ asset("js/bootstrap-datetimepicker.min.js") }}></script>
+<script src={{ asset("js/app.js") }}></script>
 </body>
 
 
