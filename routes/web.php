@@ -23,7 +23,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-//Route::get('/add-doctor', 'DoctorController@add-doctor');
+Route::get('/create', [DoctorController::class,'create']);
 //Route::get('/Doctor', 'DoctorController@index');
 //Route::resource('Doctor','DoctorController');
 //Route::get('/doctor',[\App\Http\Controllers\pagesController::class,'doctor']);
